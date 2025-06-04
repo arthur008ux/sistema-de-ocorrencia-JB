@@ -1,12 +1,43 @@
-# React + Vite
+# 📚 Sistema de Ocorrências Escolares
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um sistema educacional simples desenvolvido com **React** e **TypeScript**, onde professores podem gerar ocorrências para alunos, e essas ocorrências afetam a nota dos estudantes nas disciplinas correspondentes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- Cadastro de Professores.
+- Geração de Ocorrências para alunos.
+- Seleção de Disciplinas com base no Curso e Semestre.
+- Interface amigável com campos de texto e `select`.
+- Organização de disciplinas comuns e específicas por curso/semestre.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Tecnologias Utilizadas
+
+- ⚛️ **React** – Interface do usuário
+- 🟦 **TypeScript** – Tipagem estática
+- 🎯 **Vite** (opcional) – Empacotamento rápido de projetos React
+- 💅 **CSS** – Estilização básica
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+```bash
+src/
+│
+├── models/                # Tipos, enums e classes (Professor, Ocorrencia, Disciplina, etc)
+│   ├── Professor.ts
+│   ├── Ocorrencia.ts
+│   ├── Disciplina.ts
+│   ├── Curso.ts
+│   ├── Semestre.ts
+│
+├── components/            # Componentes de interface
+│   ├── CriarOcorrencia.tsx
+│
+├── App.tsx                # Componente principal
+├── main.tsx               # Ponto de entrada do React
+└── index.css              # Estilizações globais
